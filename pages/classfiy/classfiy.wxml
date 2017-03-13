@@ -1,0 +1,22 @@
+<view class="wrap">
+    <view class = "classfiyBox"  catchtap="goListB">
+        <view class = "words">
+            <view class = "fir">所有商品</view>
+            <view class = "seo">all</view>
+        </view>
+        <view class = "img">
+            <image  src="../../resources/example.png"></image>      
+        </view>
+    </view>
+    <block wx:for = "{{list}}" >
+        <view class = "classfiyBox"  catchtap="goList" data-id = "{{item.id}}">
+            <view class = "words">
+                <view class = "fir">{{item.category_name}}</view>
+                <view class = "seo">{{item.category_en_name}}</view>
+            </view>
+            <view class = "img">
+                <image src="{{item.img_url}}" ></image>           
+            </view>
+        </view>
+    </block>
+</view>

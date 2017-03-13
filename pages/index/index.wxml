@@ -1,0 +1,34 @@
+<swiper indicatorDots autoplay  >
+  <block wx:for="{{bannerData}}" wx:for-index="idx">
+    <swiper-item>
+      <image src="{{item.img_url}}" class="slide-image"   data-id = "{{idx}}" catchtap="bannerGo"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="recommend_scroll_x_box">
+  <view class="recommend_hot_box" wx:for="{{appData.goodsClaData}}">
+    <navigator url="../classfiy/goodsList/goodsList?id={{item.clickAction}}&type=1">
+      <image src="{{item.category_img}}" class="recommend_hot_image"></image>
+      <text class="recommend_hot_text">{{item.category_name}}</text>
+    </navigator>
+  </view>
+</view>
+<view wx:for="{{list}}" wx:for-index = "idx">
+  <view class = "listBox" data-id = "{{item.id}}">
+      <image src="{{item.produce_img}}" class="goodsBigImg" bindtap="goodsDetailTap" data-id = "{{idx}}"></image> 
+  </view>
+  <view class = "words">
+      <text class="goodsName">{{item.name}}</text>
+      <text class="goodsPrice">￥{{item.price_true}}</text>
+      <image src="../../resources/heart.png" class = "heartIcon" wx:if ="{{item.is_wish == 1?false:true}}" catchtap = "getHeart" data-id = "{{idx}}"></image>
+      <image src="../../resources/heartGet.png" class = "heartIcon"wx:if ="{{item.is_wish == 1?true:false}}" catchtap = "getHeart" data-id = "{{idx}}"></image>  
+      <image src="../../resources/cart.png" class = "cart" catchtap = "goCart" data-id = "{{idx}}"></image>  
+  </view>
+</view>
+<loading hidden="{{goCart}}" bindchange="loadingChange">
+   加入购物车...
+</loading>
+<loading hidden="{{dataFlag}}" bindchange="loadingChange">
+   加载中...
+</loading>
+

@@ -1,0 +1,41 @@
+/* pages/personal/collection/collection.wxss */
+.clearfix{zoom:1;}
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+page{
+    background-color: #efefef;
+}
+.collection{
+    padding: 30rpx 0;
+    border-bottom: 1rpx solid #e5e5e5;
+    background-color: #fff;
+}
+.collection-image{
+    float: left;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+    width: 150rpx;
+    height: 150rpx;
+    border: 1rpx solid #999;
+}
+.collection-image image{
+    width: 100%;
+    height: 100%;
+}
+.collection-details{
+    float: left;
+    width: 550rpx;
+    font-size: 14px;
+}
+.collection-name{
+    color: #333;
+    height: 125rpx;
+}
+.collection-value{
+    color: orange;
+}
+.no-more{
+    margin-top: 10rpx;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}

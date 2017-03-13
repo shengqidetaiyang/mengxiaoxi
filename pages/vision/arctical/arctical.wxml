@@ -1,0 +1,20 @@
+<view class = "visonWrap">
+    <view class = "topicSec">{{list.two_title}}</view>
+    <view class = "time">{{time}}</view>
+</view>
+<view class = "articalCon">
+    <block wx:for = "{{info}}">
+        <view class = "articalWords" wx:if = "{{item.type == 1?true:false}}">{{item.content}}</view>
+        <image class = "articalImg" wx:if = "{{item.type == 2?true:false}}" src="{{item.content}}"></image>
+    </block>
+</view>
+<view class = "kong"></view>
+<view class = "comment">
+    <view class = "praise" catchtap = "goPraise">
+        <image src = "../../../resources/praise.png" wx:if = "{{flag}}"></image>
+        <image src = "../../../resources/praiseNo.png" wx:if = "{{!flag}}"></image>
+    </view>
+    <view class = "say" catchtap = "goComment">
+        <image src = "../../../resources/comment.png"></image>
+    </view>
+</view>

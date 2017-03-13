@@ -1,0 +1,9 @@
+<!--pages/personal/delivery/process/process.wxml-->
+<view class = "top">物流详情</view>
+<block wx:for = "{{list}}">
+    <view class = "wrap">
+        <view class = "adress">{{item.AcceptStation}}</view>
+        <view class = "time">{{item.AcceptTime}}</view>
+    </view>
+</block>
+<view wx:if = "{{infoShow}}" class = "tip">暂无物流信息</view>

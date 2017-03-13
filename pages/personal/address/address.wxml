@@ -1,0 +1,29 @@
+<!--pages/personal/address/address.wxml-->
+<view catchtap="bindAddAddressTap" class="add-address">
+    <view>添加新地址</view>
+</view>
+<block wx:key="address" wx:for="{{list}}" wx:for-index="idx">
+    <view class="address">
+        <view class="address-border">
+            <image wx:if="{{item.is_default == 2?true:false}}" src="{{borderSrc}}"></image>
+        </view>
+        <view class="address-box clearfix">
+            <view class="address-left-box">
+                <view class="user-name">
+                    <text wx:if="{{item.is_default == 2?true:false}}" class="default-text">默认</text>
+                    <text class="user-name-text">{{item.name}}</text>
+                </view>
+                <scroll-view scroll-y class="user-address">{{item.province+item.city+ item.county +item.detail}}</scroll-view>
+            </view>
+            <view class="address-right-box">
+                <view class="user-number">{{item.phone}}</view>
+                <view class="default-delete-tap">
+                    <text data-id="{{idx}}" bindtap="bindDefaultTap" class="default-tap">设为默认</text>
+                    <text data-id="{{idx}}" bindtap="bindDeleteTap" class="delete-address-tap">删除</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>
+<loading hidden="{{loadFlag}}">处理中...</loading>
+<loading hidden="{{dataFlag}}">加载中...</loading>

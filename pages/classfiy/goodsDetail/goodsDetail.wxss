@@ -1,0 +1,180 @@
+.goodsDetail{
+    width:750rpx;
+    height:750rpx;
+}
+.goodsName,.goodsPrice{
+  display: block;
+  font-size:14px;
+  padding:0 10rpx;
+  text-indent:10px;
+}
+.goodsName{
+    font-size:15px;
+    font-weight:bold;
+    color:black;
+}
+.goodsPrice{
+  color:orange;
+  padding:10rpx 10rpx;
+}
+.goodsIntro{
+    color:#333;
+    font-size:13px;
+    padding:0 10rpx;
+}
+.detailBox{
+  position:relative;
+}
+.heartIcon{
+    position: absolute;
+    bottom:20rpx;
+    right:20rpx;
+    width:50rpx;
+    height:50rpx;
+}
+.cartIcon{
+    position: absolute;
+    top:20rpx;
+    right:20rpx;
+    width:50rpx;
+    height:50rpx; 
+}
+.homeIcon{
+    position: absolute;
+    top:20rpx;
+    left:20rpx;
+    width:50rpx;
+    height:50rpx; 
+}
+contact-button{
+    position: absolute;
+    bottom:20rpx;
+    left:20rpx;
+}
+.bottomNav{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    left:0;
+    height:80rpx;
+}
+.bottomNav view{
+    display: inline-block;
+    width:50%;
+    height:80rpx;
+    line-height:80rpx;
+    text-align:center;
+    font-size:14px;
+    color:white;
+}
+.bottomNav view:nth-of-type(1){
+    background-color:#ea5505;
+}
+.bottomNav view:nth-of-type(2){
+    background-color:#448873;
+}
+.buyMeng{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index:2;
+}
+.chooseBox{
+    width:80%;
+    margin-left:10%;
+    margin-top:30%;
+    background-color:white;
+}
+.chooseBox image{
+    width:80rpx;
+    height:80rpx;
+    vertical-align: top;
+}
+.chooseBox .infor{
+    padding:30rpx;
+}
+.chooseBox .infor .inforChild{
+    padding-bottom:20rpx;
+    border-bottom:1px solid rgba(0,0,0,0.2);
+}
+.chooseBox .infor .inforChildSec{
+    height:80rpx;
+    line-height:80rpx;
+    font-size:16px;
+    border-bottom:1px solid rgba(0,0,0,0.2);
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.chooseBox .infor .intro{
+    display: inline-block;
+    padding-left:20rpx;
+    width:200rpx;
+}
+.chooseBox .infor .intro text{
+    display: block;
+    font-size:15px;
+    line-height:40rpx;
+    margin-bottom:10rpx;
+}
+.chooseBox .infor .intro text:nth-of-type(1){
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;  
+}
+.chooseBox .infor .intro text:nth-of-type(2){
+    color:orange;
+}
+.chooseBox button{
+    color:green;
+}
+.inforChildThird{
+    padding:20rpx 0;
+}
+.inforChildThird image{
+    width:30rpx;
+    height:30rpx;
+    padding:30rpx;
+    vertical-align: middle;
+}
+.inforChildThird text{
+    vertical-align: middle;
+    font-size:16px;
+}
+.inforChildThird image:nth-of-type(1){
+    margin-left:170rpx;
+}
+.inforChildThird .count{
+    padding:0 5rpx;
+    display: inline-block;
+    color:black;
+    width:40rpx;
+    text-align:center;
+}
+.inforChildFor .total{
+    color:orange;
+}
+.inforChildFor text{
+    font-size:16px;
+}
+.articalWords{
+    width:96%;
+    padding:0 2%;
+    font-size:13px;
+    line-height:25px;
+    padding-bottom:10rpx
+}
+.articalImg{
+    width:100%;
+    height:750rpx;
+    margin:0;
+    padding:0;
+    margin-top:-14rpx;
+}
+
+.kong{
+    height:50px;
+}

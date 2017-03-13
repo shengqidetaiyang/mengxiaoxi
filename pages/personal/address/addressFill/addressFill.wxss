@@ -1,0 +1,51 @@
+/* pages/personal/address/addressFill/addressFill.wxss */
+.clearfix{zoom:1;}
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+page{
+    background-color: #efefef;
+}
+.form-box{
+    background-color: #fff;
+}
+.box{
+    margin-left: 30rpx;
+    margin-bottom:20rpx;
+}
+.user-name,.user-number{
+    font-size: 15px;
+    height:50px;
+    line-height:50px;
+    color: #666;
+    border-bottom: 1rpx solid #dfdfdf;
+}
+.province,.city,.area{
+    padding: 20rpx 0;
+    font-size: 15px;
+    color: #333;
+    border-bottom: 1rpx solid #dfdfdf;
+}
+.province image,.city image,.area image{
+    float: right;
+    margin-top: 5rpx;
+    margin-right: 10rpx;
+    width: 20rpx;
+    height: 20rpx;
+}
+.detailed-address{
+    padding: 20rpx 0;
+    font-size: 15px;
+    height: 100rpx;
+}
+.complete-box{
+    padding: 20rpx 0;
+    border-top: 1rpx solid #dfdfdf;
+}
+.complete{
+    width: 700rpx;
+    padding: 10rpx;
+    background-color: orange;
+    border-radius: 50rpx;
+    font-size: 18px;
+    color: #fff;
+    line-height: inherit;
+}

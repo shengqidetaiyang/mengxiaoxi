@@ -1,0 +1,75 @@
+/* pages/vision/vision.wxss */
+page{
+    background-color:#f2efef;
+}
+.visonBox{
+    width:100%;  
+    background-color:white;
+}
+.visonBox image{
+    width:100%;
+    height:290rpx;
+    margin-bottom:12px;
+}
+
+.articleClassfiy{
+    width:100%;
+    height:42px;
+    background-color:#fff;
+}
+.articleClassfiy>view{
+    float:left;
+    width:20%;
+    height:39px;
+    position:relative; 
+    background-color:#fff;
+}
+.words{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    text-align:center;
+    line-height:39px;
+    font-size:14px;
+}
+.articleClassfiy .active{
+    color:#438873;
+    position:relative;
+}
+.articleClassfiy .normal{
+    position:relative;
+}
+.border{
+    position:absolute;
+    left:35%;
+    top:0;
+    width:30%;
+    height:36px;
+    border-bottom:3px solid #fff;
+}
+.borderCol{
+    position:absolute;
+    left:35%;
+    top:0;
+    width:30%;
+    height:36px;
+    border-bottom:3px solid #438873;
+}
+.title{
+    font-size:16px;
+    line-height:21px;
+    padding-left:38rpx;
+    padding-right:38rpx;
+    color:#5b5b5b;
+    background-color:white;
+}
+.time{
+    font-size:15px;
+    color:#a7a7a7;
+    padding-left:38rpx;
+    line-height:27px;
+    margin-bottom:8px;
+    background-color:white;
+}

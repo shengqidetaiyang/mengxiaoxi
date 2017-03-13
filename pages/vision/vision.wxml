@@ -1,0 +1,19 @@
+<view class = "articleClassfiy">
+    <block wx:for = "{{articleClassfiy}}" wx:for-index = "idx">
+        <view class = '{{index == idx?"active":"nomal"}}' catchtap = "changeClassfiy" data-id = "{{idx}}">
+            <view class = "words">{{item.article_type_name }}</view>
+            <view class = '{{index == idx?"borderCol":"border"}}'></view>
+        </view>
+    </block>
+</view>
+<block  wx:for = "{{list}}" wx:for-index = "idx">
+    <view class = "visonWrap" catchtap = "goArctical" data-id = "{{item.id}}">
+        <view class = "visonBox" >
+            <image src = "{{item.img_url}}"/>   
+        </view>
+    </view>
+    <view class = "title">{{item.title}}</view>
+    <view class = "time">{{timeBox[idx]}}</view>
+</block>
+
+

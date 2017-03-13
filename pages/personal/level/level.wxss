@@ -1,0 +1,5 @@
+/* pages/personal/level/level.wxss */
+page{
+    background-color: #efefef;
+    font-size: 30rpx;
+}

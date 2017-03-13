@@ -1,0 +1,16 @@
+<!--pages/personal/history/history.wxml-->
+<view class="clear-history">
+    <view catchtap = "clearTrace">清除痕迹</view>
+</view>
+<view wx:key="historyDay" wx:for="{{trace}}" wx:for-index = "idx">
+    <view class="history-day">{{traceDate[idx]}}</view>
+    <view wx:key="history" wx:for="{{trace[idx]}}" class="history clearfix">
+        <view class="history-image">
+            <image src="{{item.produce_img}}"></image>
+        </view>
+        <view class="history-details">
+            <view class="history-name">{{item.name}}</view>
+            <view class="history-value">{{item.price_true}}</view>
+        </view>
+    </view>
+</view>

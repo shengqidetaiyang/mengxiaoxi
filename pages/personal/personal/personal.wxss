@@ -1,0 +1,158 @@
+/* pages/personal/personal.wxss */
+.clearfix{zoom:1;}
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+page{
+    background-color: #f2efef;
+}
+.user-contact{
+    float: left;
+    margin-left: 20rpx;
+    margin-top:40rpx;
+}
+.user-set{
+    float: right;
+    margin-right: 20rpx;
+    margin-top:40rpx;
+    width: 50rpx;
+    height: 50rpx;
+}
+.userinfo{
+    height:500rpx;
+    position:relative;
+}
+.userinfo .bac{
+    position:absolute;
+    left:0;
+    top:0;
+    width:750rpx;
+    height:500rpx;
+    z-index:-1;
+}
+.userinfo-avatar{
+    display: block;
+    margin: 0 auto;
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    padding-top:150rpx;
+}
+.user-name-lev{
+    margin-top: 20rpx;
+    text-align: center;
+    margin-bottom:20px;
+}
+.user-level{
+    margin-left: 20rpx;
+    padding: 7rpx 20rpx;
+    border-radius: 10rpx;
+    font-size: 17px;
+    color: #e2c89c;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.user-total-assets{
+    margin-top: 30rpx;
+    text-align: center;
+}
+.user-assets,.user-coupons{
+    padding: 7rpx 15rpx;
+    background-color: #f3e8d5;
+    border-radius: 10rpx;
+    font-size: 17px;
+    color: #a98951;
+}
+.user-assets{
+    margin-right: 10rpx;
+}
+.user-order{
+    background-color: #fff;
+    padding:20px 0 20px 0;
+    border-bottom: 1rpx solid #e5e5e5;
+    border-top: 1rpx solid #e5e5e5;
+}
+.user-order-text{
+    float: left;
+    margin-left: 10rpx;
+    font-size: 15px;
+    color: #333;
+}
+.user-check-order{
+    float: right;
+    margin-right: 10rpx;
+    width: 100px;
+    font-size: 15px;
+    line-height: 35rpx;
+    color: #999;
+}
+.user-order .right-arrow{
+    float: right;
+    margin-top: 7rpx;
+    margin-right: 15rpx;
+    width: 20rpx;
+    height: 20rpx;
+}
+.user-all-goods{
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    padding: 10px 0;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.user-payment,.user-goods,.user-collection{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+.user-goods{
+    margin: 0 auto;
+}
+.user-collection{
+    float: right;
+}
+.num{
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: orange;
+}
+.user-payment-text,.user-goods-text,.user-collection-text{
+    font-size: 16px;
+    color: #666;
+}
+.user-payment-icon,.user-goods-icon,.user-collection-icon{
+    margin-right: 10rpx;
+    width: 30rpx;
+    height: 30rpx;
+    vertical-align: middle;
+}
+.user-payment-icon{
+    width: 25rpx;
+    height: 25rpx;
+}
+.user-all-coupons,.shipping-address,.footprint,.customer-service{
+    background-color: #fff;
+    padding: 30rpx 0;
+    border-bottom: 1rpx solid #e5e5e5;
+}
+.user-all-coupons-text,.shipping-address-text,.footprint-text,.customer-service-text{
+    margin-left: 10px;
+    font-size: 16px;
+    color: #666;
+}
+.user-all-coupons-icon,.shipping-address-icon,.footprint-icon,.customer-service-icon{
+    margin-left: 10rpx;
+    width:30rpx;
+    height:30rpx;
+    vertical-align:middle;
+
+}
+.user-all-coupons .right-arrow,.shipping-address .right-arrow,.footprint .right-arrow,.customer-service .right-arrow{
+    float: right;
+    margin-top: 15rpx;
+    margin-right: 10rpx;
+    width: 20rpx;
+    height: 20rpx;
+}
+.userinfo-nickname{
+    display: inline-block;
+    color:black;
+    font-size:20px;
+}

@@ -1,0 +1,83 @@
+{
+  "pages":[ 
+    "pages/index/index",
+    "pages/personal/more/about/about",
+    "pages/vision/vision",
+
+    "pages/personal/allorder/allorder",
+
+    "pages/personal/payment/payment",
+    "pages/personal/delivery/process/process",
+    "pages/register/index",
+    "pages/personal/delivery/delivery",
+
+    "pages/personal/finish/finish",
+    "pages/personal/address/addressb/addressb",
+    "pages/personal/address/addressc/addressc",
+    "pages/personal/address/address",
+    "pages/personal/address/addressFill/addressFill",
+    "pages/vision/comment/comment",
+    "pages/classfiy/goodsDetail/goodsDetail",
+    "pages/cart/cartlist/cartlist",
+    "pages/cart/payment/payment",
+    "pages/cart/paymentCart/paymentCart",
+    "pages/classfiy/classfiy",
+    "pages/logs/logs",
+
+    "pages/personal/personal/personal",
+    "pages/classfiy/goodsList/goodsList",
+    "pages/classfiy/goodsListB/goodsListB",
+    "pages/personal/more/more",
+
+    "pages/personal/more/contact/contact",
+    "pages/personal/more/other/other",
+    "pages/personal/level/level",
+    "pages/personal/assets/assets",
+    "pages/personal/assets/about_assets/about_assets",
+    "pages/personal/coupons/coupons",
+    "pages/personal/coupons/notice/notice",
+    "pages/personal/order/order",
+    "pages/personal/collection/collection",
+    "pages/personal/history/history",
+    "pages/vision/arctical/arctical"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#448873",
+    "navigationBarTitleText": "萌小熹",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "white"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "resources/indexPageNo.png",
+      "selectedIconPath": "resources/indexPage.png"
+    }, {
+      "pagePath": "pages/classfiy/classfiy",
+      "text": "分类",
+      "iconPath": "resources/classfiyPageNo.png",
+      "selectedIconPath": "resources/classfiyPage.png"
+    }, {
+      "pagePath": "pages/vision/vision",
+      "text": "部落",
+      "iconPath": "resources/visonPageNo.png",
+      "selectedIconPath": "resources/visonPage.png"
+    }, {
+      "pagePath": "pages/cart/cartlist/cartlist",
+      "text": "购物车",
+      "iconPath": "resources/cartPageNo.png",
+      "selectedIconPath": "resources/cartPage.png"
+    }, {
+      "pagePath": "pages/personal/personal/personal",
+      "text": "个人中心",
+      "iconPath": "resources/personalPageNo.png",
+      "selectedIconPath": "resources/personalPage.png"
+    }],
+    "color": "#454545",
+    "selectedColor": "#448873",
+    "borderStyle": "white"
+  }
+}

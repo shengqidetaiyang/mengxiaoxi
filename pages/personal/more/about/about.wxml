@@ -1,0 +1,4 @@
+<!--pages/personal/more/about/about.wxml-->
+<view class="title">
+    <image class="user-collection-icon" src="../../../../resources/about.png"></image>
+</view>

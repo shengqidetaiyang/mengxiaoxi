@@ -1,0 +1,4 @@
+/* pages/personal/assets/about_assets/about_assets.wxss */
+page{
+    background-color: #efefef;
+}

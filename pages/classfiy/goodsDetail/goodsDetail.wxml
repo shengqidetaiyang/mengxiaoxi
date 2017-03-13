@@ -1,0 +1,79 @@
+<view>
+    <view class = "detailBox">
+        <image src = "{{newProduce.produce_img}}"  class = "goodsDetail"></image>
+        <image src="../../../resources/cart.png" class = "cartIcon" catchtap = "goCart"></image>  
+        <image src="../../../resources/home.png" class = "homeIcon" catchtap = "goIndex"></image>  
+        <image src="../../../resources/heart.png" class = "heartIcon" wx:if ="{{newProduce.is_wish == 1?false:true}}" catchtap = "getHeart"></image>
+        <image src="../../../resources/heartGet.png" class = "heartIcon"wx:if ="{{newProduce.is_wish == 1?true:false}}" catchtap = "getHeart"></image>
+        <contact-button type="default-dark" size="27" session-from="weapp"></contact-button>       
+    </view>
+    <text class="goodsName">{{newProduce.name}}</text>
+    <text class="goodsPrice">￥{{newProduce.price_true}}</text>
+    <view class = "articalCon">
+        <block wx:for = "{{info}}">
+            <view class = "articalWords" wx:if = "{{item.type == 1?true:false}}">{{item.content}}</view>
+            <image class = "articalImg" wx:if = "{{item.type == 2?true:false}}" src="{{item.content}}"></image>
+        </block>
+    </view>
+    <view class = "kong"></view>
+    <view class="bottomNav">
+        <view catchtap = "confirmBuy">立即购买</view>
+        <view catchtap = "confirmBuyCart">加入购物车</view>
+    </view>
+    <view class = "buyMeng" wx:if="{{goodsChoose}}" catchtap = "mengHide">
+        <view class = "chooseBox" catchtap = "kong">
+            <view class = "infor">
+                <view class = "inforChild">
+                    <image src="{{newProduce.produce_img}}"></image>
+                    <view class = "intro">
+                        <text>{{newProduce.name}}</text>
+                        <text>￥{{newProduce.price_true}}</text>
+                    </view>
+                </view>
+                <view class = "inforChildSec">当前选择:{{newProduce.name}}</view>
+                <view class = "inforChildThird">
+                    <text>购买数量</text>
+                    <image src="../../../resources/minus.png" catchtap = "minus"></image>
+                    <text class = "count">{{count}}</text>
+                    <image src="../../../resources/plus.png" catchtap = "plus"></image>
+                </view>
+                <view class = "inforChildFor">
+                    <text>商品总价:</text>
+                    <text class="total">￥{{newProduce.price_true*count}}</text>
+                </view>
+            </view>
+            <button catchtap = "confirm">确认</button>
+        </view>  
+    </view>
+    <view class = "buyMeng" wx:if="{{goodsChooseCart}}" catchtap = "mengHideCart">
+        <view class = "chooseBox" catchtap = "kong">
+            <view class = "infor">
+                <view class = "inforChild">
+                    <image src="{{newProduce.produce_img}}"></image>
+                    <view class = "intro">
+                        <text>{{newProduce.name}}</text>
+                        <text>￥{{newProduce.price_true}}</text>
+                    </view>
+                </view>
+                <view class = "inforChildSec">当前选择:{{newProduce.name}}</view>
+                <view class = "inforChildThird">
+                    <text>购买数量</text>
+                    <image src="../../../resources/minus.png" catchtap = "minusCart"></image>
+                    <text class = "count">{{countCart}}</text>
+                    <image src="../../../resources/plus.png" catchtap = "plusCart"></image>
+                </view>
+                <view class = "inforChildFor">
+                    <text>商品总价:</text>
+                    <text class="total">￥{{newProduce.price_true*countCart}}</text>
+                </view>
+            </view>
+            <button catchtap = "confirmCart">确认</button>
+        </view>  
+    </view>
+</view>
+<loading hidden="{{dealFlag}}" bindchange="loadingChange">
+   处理中...
+</loading>
+<loading hidden="{{dataFlag}}" bindchange="loadingChange">
+   加载中...
+</loading>

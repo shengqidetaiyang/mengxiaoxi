@@ -1,0 +1,6 @@
+<!--pages/personal/assets/assets.wxml-->
+<view>
+    <image bindtap="bindDoubtTap" class="doubt" src="../../../resources/userSetImage.png"></image>
+    <text>妙钻余额：</text>
+    <text class="blance">{{balance}}</text>
+</view>

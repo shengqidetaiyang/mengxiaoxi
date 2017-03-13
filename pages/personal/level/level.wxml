@@ -1,0 +1,2 @@
+<!--pages/personal/level/level.wxml-->
+<view>常规会员等级从M0-M9共十个等级。M0代表新注册用户，产生首次购买后直接晋级M1等级。</view>

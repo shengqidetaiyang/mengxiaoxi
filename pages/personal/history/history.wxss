@@ -1,0 +1,54 @@
+/* pages/personal/history/history.wxss */.clearfix{zoom:1;}
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+page{
+    background-color: #efefef;
+}
+.clear-history{
+    padding: 20rpx 0;
+    background-color: #fff;
+}
+.clear-history view{
+    margin:0 auto;
+    padding: 15rpx 0;
+    width: 700rpx;
+    background-color: orange;
+    border-radius: 50rpx;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.history-day{
+    padding: 10rpx 0;
+    font-size: 14px;
+    color: #666;
+    background-color: #e6e6e6;
+}
+.history{
+    padding: 30rpx 0;
+    border-bottom: 1rpx solid #e5e5e5;
+    background-color: #fff;
+}
+.history-image{
+    float: left;
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+    width: 75px;
+    height: 75px;
+    border: 1rpx solid #999;
+}
+.history-image image{
+    width: 100%;
+    height: 100%;
+}
+.history-details{
+    float: left;
+    width: 550rpx;
+    font-size: 14px;
+}
+.history-name{
+    color: #333;
+    height: 59px;
+}
+.history-value{
+    color: orange;
+}

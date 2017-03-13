@@ -1,0 +1,59 @@
+<!--pages/personal/personal.wxml-->
+<view class = "wrap" wx:if ="{{pageShow}}">
+        <view class="userinfo">
+            <contact-button class="user-contact" type="default-dark" size="27" session-from="weapp"></contact-button>
+            <image class="user-set" bindtap="bindMoreTap" src="../../../resources/set.png"></image>
+            <image src="../../../resources/background.jpg" class = "bac"></image>
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+            <view class="user-name-lev">
+                <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+            </view>
+        </view>
+    <view bindtap="bindOrderTap" class="user-order clearfix">
+        <text class="user-order-text">全部订单</text>
+        <image class="right-arrow" src="../../../resources/right_arrow.png"></image>
+        <text class="user-check-order">查看全部订单</text>
+    </view>
+    <view class="user-all-goods clearfix">
+        <view bindtap="bindPaymentTap" class="user-payment">
+            <text class="num">{{paymentNum}}</text>
+            <image class="user-payment-icon" src="../../../resources/pay.png"></image>
+            <text class="user-payment-text">待付款</text>
+        </view>
+        <view bindtap="bindDeliveryTap" class="user-goods">
+            <text class="num">{{deliveryNum}}</text>
+            <image class="user-goods-icon" src="../../../resources/goods_car.png"></image>
+            <text class="user-goods-text">待收货</text>
+        </view>
+        <view bindtap="bindCollectionTap" class="user-collection">
+            <text class="num">{{userCollection}}</text>
+            <image class="user-collection-icon" src="../../../resources/collection.png"></image>
+            <text class="user-collection-text">心愿单</text>
+        </view>
+    </view>
+    <!--<view bindtap="bindCouponsTap" class="user-all-coupons clearfix">
+        <image class="user-all-coupons-icon" src="../../../resources/user-all-coupons.png"></image>
+        <text class="user-all-coupons-text">优惠券</text>
+        <image class="right-arrow" src="../../../resources/right_arrow.png"></image>
+    </view>-->
+    <view bindtap="bindAddressTap" class="shipping-address clearfix">
+        <image class="shipping-address-icon" src="../../../resources/shipping-address.png"></image>
+        <text class="shipping-address-text">收货地址</text>
+        <image class="right-arrow" src="../../../resources/right_arrow.png"></image>
+    </view>
+    <view bindtap="bindHistoryTap" class="footprint clearfix">
+        <image class="footprint-icon" src="../../../resources/footprint.png"></image>
+        <text class="footprint-text">足迹</text>
+        <image class="right-arrow" src="../../../resources/right_arrow.png"></image>
+    </view>
+    <view  bindtap="bindcallingTap" class="customer-service clearfix">
+        <image class="customer-service-icon" src="../../../resources/customer-service.png"></image>
+        <text class="customer-service-text">拨打客服热线:020-22196477</text>
+        <image class="right-arrow" src="../../../resources/right_arrow.png"></image>
+    </view>
+</view>
+<button wx:if = "{{buttonShow}}" type = "primary" catchtap = "goRegister">点击去往注册页</button>
+<loading hidden="{{dataFlag}}" bindchange="loadingChange">
+   加载中...
+</loading>
+

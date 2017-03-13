@@ -1,0 +1,28 @@
+<!--pages/personal/address/addressFill/addressFill.wxml-->
+<view class="form-box">
+    <form bindsubmit="formSubmit">
+        <view class="box">
+            <input placeholder-style="color:#666" name="userName" class="user-name" type="text" placeholder="收货人名字"/>
+            <input placeholder-style="color:#666" name="userNumber" class="user-number" type="number" placeholder="手机号"/>
+            <picker bindchange="bindProvinceChange" name="province" class="province clearfix" range="{{provinceArray}}">
+                <text wx:if="{{!provinceFlag}}">{{province}}</text>
+                <text wx:if="{{provinceFlag}}">{{provinceArray[provinceIndex]}}</text>
+                <image src="{{pickerSrc}}"></image>
+            </picker>
+            <picker disabled="{{cityDisabled}}" name="city" bindchange="bindCityChange" class="city clearfix" range="{{cityArray}}">
+                <text wx:if="{{!cityFlag}}">{{city}}</text>
+                <text wx:if="{{cityFlag}}">{{cityArray[cityIndex]}}</text>
+                <image src="{{pickerSrc}}"></image>
+            </picker>
+            <picker  disabled="{{areaDisabled}}" name="area" bindchange="bindAreaChange" class="area clearfix" range="{{areaArray}}">
+                <text wx:if="{{!areaFlag}}">{{area}}</text>
+                <text wx:if="{{areaFlag}}">{{areaArray[areaIndex]}}</text>
+                <image src="{{pickerSrc}}"></image>
+            </picker>
+            <textarea placeholder-style="color:#666" name="detailedAddress" class="detailed-address" placeholder="详细地址"/>
+        </view>
+        <view class="complete-box">
+            <button class="complete" form-type="submit">完成</button>
+        </view>
+    </form>
+</view>

@@ -1,0 +1,85 @@
+/* pages/vision/arctical/arctical.wxss */
+.visonBox{
+    width:100%;  
+    position:relative; 
+    height:375rpx;
+}
+.visonBox image{
+    width:100%;
+    height:375rpx;
+}
+.inner{
+    width:100%;
+    position:relative;
+    height:375rpx;
+}
+.topicSec{
+    font-size:18px;
+    line-height:30px;
+    padding:0 38rpx;
+}
+.time{
+    font-size:15px;
+    line-height:28px;
+    padding-left:38rpx;
+    margin-bottom:10rpx;
+    color:#a7a7a7;
+}
+.visonWrap{
+    width:100%;
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+.words{
+    padding:10px 5px;
+    font-size:15px;
+}
+.arctical{
+    margin-bottom:50px; 
+}
+.comment{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:40px;
+    border-top:1px solid #ccc;  
+}
+.praise{
+    width:374rpx;
+    height:40px;
+    display:inline-block;
+    background-color:white;
+    position:relative;
+}
+.say{
+    width:374rpx;
+    height:40px;
+    display:inline-block;
+    background-color:white;
+    position:relative;    
+}
+.comment image{
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    height:30px;
+    width:30px;
+}
+.comment .praise{
+    border-right:2rpx solid #ccc;
+}
+.articalWords{
+    width:96%;
+    padding:0 2%;
+    font-size:15px;
+    line-height:25px;
+}
+.articalImg{
+    width:100%;
+}
+.kong{
+    height:50px;
+}

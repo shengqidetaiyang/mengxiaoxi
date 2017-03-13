@@ -1,0 +1,10 @@
+/* pages/personal/more/contact/contact.wxss */
+page{
+    background-color: #efefef;
+}
+.title{
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+    font-size: 35rpx;
+    font-weight: 600;
+}

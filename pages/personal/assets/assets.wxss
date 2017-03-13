@@ -1,0 +1,20 @@
+/* pages/personal/assets/assets.wxss */
+page{
+    background-color: #efefef;
+}
+view{
+    padding: 20rpx 0;
+    background-color: #fff;
+    font-size: 35rpx;
+    color: #666;
+}
+.doubt{
+    margin: 0 5rpx;
+    width: 30rpx;
+    height: 30rpx;
+}
+.blance{
+    float: right;
+    margin-right: 10rpx;
+    color: orange;
+}

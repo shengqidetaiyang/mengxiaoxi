@@ -1,0 +1,110 @@
+.goodsTips{
+    padding:20rpx;
+    padding-bottom:0;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    position:relative;
+}
+.checkbox{
+    display: block;
+}
+.chooseWrap{
+    position:relative;
+    display: inline-block;
+    width:40rpx;
+    height:40rpx;
+    margin-right:20rpx;
+    border-radius:50%;
+    border:1px solid orange;
+    margin-top:10rpx;
+}
+.chooseInner{
+    position:absolute;
+    width:80%;
+    height:80%;
+    left:10%;
+    top:10%;
+    background-color:orange;
+    border-radius:50%;
+}
+.goodsList{
+    display: inline-block;
+    vertical-align: middle;
+}
+.goodsList image{
+    width:150rpx;
+    height:150rpx;
+}
+.goodsList .words{
+    display: inline-block;
+    vertical-align: top;
+    padding-left:30rpx;
+    font-size:15px;
+    width:466rpx;
+}
+.goodsList .words .wordsChildSec{
+    padding-top:10rpx;
+    font-weight:600;
+    color:orange;
+}
+.goodsList .words .wordsChildThird image{
+    width:30rpx;
+    height:30rpx;
+    vertical-align: middle;
+    padding:30rpx;
+}
+.goodsList .words .wordsChildThird text{
+    display: inline-block;
+    font-weight:600;
+    color:black;
+    width:40rpx;
+    text-align: center;
+}
+.goodsList .words .wordsChildThird image:nth-of-type(1){
+    padding-left:0;
+}
+.del{
+    position:absolute;
+    width:30rpx;
+    height:30rpx;
+    padding:30rpx;
+    right:0;
+    bottom:0;
+}
+.bottom{
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100rpx;
+    background-color:#448873;
+    box-sizing:border-box;
+    padding:0 20rpx;
+    border-bottom:2px solid rgba(0,0,0,0.1);
+}
+.bottom .chooseWrap{
+    margin-top:30rpx;
+}
+.bottom text{
+    line-height:100rpx;
+    color:white;
+    font-size:16px;
+}
+.bottom .total{
+    margin-left:50rpx;
+}
+.bottom button{
+    position:absolute;
+    display: inline-block;
+    width:260rpx;
+    height:80rpx;
+    line-height:80rpx;
+    top:10rpx;
+    right:20rpx;
+    vertical-align: top;
+    color:white;
+    background-color:orange;
+}
+.bottom .words{
+    display:inline-block;
+    vertical-align:top;
+}

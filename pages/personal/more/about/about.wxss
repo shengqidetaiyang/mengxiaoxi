@@ -1,0 +1,8 @@
+/* pages/personal/more/about/about.wxss */
+page{
+    background-color: #efefef;
+}
+.title image{
+    width:750rpx;
+    height:909rpx;
+}

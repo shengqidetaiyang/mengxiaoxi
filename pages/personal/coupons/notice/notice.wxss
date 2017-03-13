@@ -1,0 +1,8 @@
+/* pages/personal/coupons/notice/notice.wxss */
+page{
+    background-color: #efefef;
+}
+view{
+    font-size: 30rpx;
+    margin: 20rpx;
+}

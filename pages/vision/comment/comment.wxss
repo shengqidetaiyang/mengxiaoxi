@@ -1,0 +1,135 @@
+.comment{
+    width:100%;
+    border-bottom:1px solid #ccc;
+}
+.comment .person{
+    width:120rpx;
+    height:120rpx;
+    border-radius:50%;
+    margin-top:20rpx;
+    margin-left:20rpx;
+}
+.comment .wrap{
+    width:610rpx;
+    display: inline-block;
+    vertical-align:top;
+}
+.fir{
+    overflow:hidden;
+}
+.comment .fir .left{
+    float:left;
+    padding-left:20rpx;
+    margin-top:5px;
+}
+.comment .fir .right{
+    float:right;
+}
+.comment .fir .right image{
+    width:23px;
+    height:23px;
+    margin-right:10px;
+    margin-top:5px;
+}
+.seo{
+    padding:0 5px;
+    font-size:13px;
+}
+.third{
+    text-align:right;
+    padding-right:10px;
+    font-size:14px;
+}
+.say{
+    position:fixed;
+    width:100%;
+    bottom:0;
+    left:0;
+    background-color:white;
+}
+.say button{
+    width:90%;
+    margin:0 auto;
+    border:none;
+    background-color:orange;
+    color:white;
+    margin-bottom:10px;
+}
+.tip{
+    text-align:center;
+    font-size:15px;
+    padding-top:20px;
+}
+.meng{
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background-color:rgba(0,0,0,0.5);
+    z-index:2;
+}
+.window{
+    position:absolute;
+    width:660rpx;
+    height:203px;
+    border-radius:3px;
+    background-color:white;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+}
+.window .fir{
+    text-align:center;
+    padding:10px 0 5px 0;
+    font-size:16px;
+}
+.score view{
+    float:left;
+    margin-left:5%;
+    margin-right:5%;
+    font-size:15px;
+}
+.score image{
+    width:23px;
+    height:23px;
+    margin-right:10px;
+}
+.confirm{
+    margin-top:20px;
+    height:40px;
+    border-top:1px solid #ccc;
+    background-color:white;
+}
+.confirm button{
+    display: inline-block;
+    width:330rpx;
+    text-align:center;
+    line-height:40px;
+    vertical-align:top;
+    font-size:16px;
+}
+.confirm .right{
+    width:328rpx;
+}
+.window textarea{
+    width:90%;
+    height:100px;
+    border:1px solid black;
+    border-radius:3px;
+    margin:5px auto;
+}
+button::after{
+    border:none;
+}
+.fenge{
+    display:inline-block;
+    width:0;
+    height:40px;
+    border-left:1px solid #ccc;
+}
+.bottom{
+    height:200rpx;
+}

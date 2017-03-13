@@ -1,0 +1,16 @@
+<!--pages/personal/collection/collection.wxml-->
+<block wx:for="{{list}}">
+    <view class="collection clearfix" wx:if = "{{item.is_wish == 1?true:false}}">
+        <view class="collection-image">
+            <image src="{{item.produce_img}}"></image>
+        </view>
+        <view class="collection-details">
+            <view class="collection-name">{{item.name}}</view>
+            <view class="collection-value">{{item.price_true}}</view>
+        </view>
+    </view>
+</block>
+<view class="no-more" wx:if ="{{flagLast}}">没有更多了</view>
+<loading hidden="{{flagCart}}" >
+   加载中...
+</loading>

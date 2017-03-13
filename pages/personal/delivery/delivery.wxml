@@ -1,0 +1,85 @@
+<!--pages/personal/payment/payment.wxml-->
+<view class="nav clearfix">
+    <navigator open-type="redirect" url="/pages/personal/allorder/allorder">全部订单</navigator>
+    <navigator open-type="redirect" url="/pages/personal/payment/payment">待付款</navigator>
+    <navigator class="nav-color">待收货</navigator>
+    <navigator open-type="redirect" url="/pages/personal/finish/finish">已完成</navigator>
+    <navigator open-type="redirect" url="/pages/personal/order/order">已取消</navigator>
+</view>
+<block wx:for="{{sqlOrder}}" wx:for-item="itemName" wx:for-index="idx">
+    <view class="order" >
+        <view class="order-num-time clearfix">
+            <text class="order-num">{{itemName.order_id}}</text>
+            <text class="order-time">{{timeBox[idx]}}</text>
+        </view>
+            <block wx:for="{{itemName.produce_list}}" >
+                    <view class="order-details clearfix">
+                        <view class="order-image">
+                            <image src="{{item.produce_img}}"></image>
+                        </view>
+                        <view class="order-details-box">
+                            <view class="order-name">{{item.name}}</view>
+                            <view class="order-amount-value">
+                                <text class="order-amount">{{item.produce_num}}件</text>
+                                <text class="order-value-text">价格：{{item.price_true}}</text>
+                            </view>
+                        </view>
+                    </view>
+            </block>        
+            <view class="total-Price clearfix">
+                <view>
+                    <text>总价：￥{{itemName.price}}</text>
+                    <text class="total-price">{{item.totalPrice}}</text>
+                </view>
+            </view> 
+            <view class="order-tap clearfix">
+                <view>
+                    <text>待发货</text>
+                </view>
+            </view> 
+    </view>
+</block>
+<block wx:for="{{sqlOrderB}}" wx:for-item="itemName" wx:for-index="idx">
+    <view class="order" >
+        <view class="order-num-time clearfix">
+            <text class="order-num">{{itemName.order_id}}</text>
+            <text class="order-time">{{timeBoxB[idx]}}</text>
+        </view>
+            <block wx:for="{{itemName.produce_list}}" >
+                    <view class="order-details clearfix">
+                        <view class="order-image">
+                            <image src="{{item.produce_img}}"></image>
+                        </view>
+                        <view class="order-details-box">
+                            <view class="order-name">{{item.name}}</view>
+                            <view class="order-amount-value">
+                                <text class="order-amount">{{item.produce_num}}件</text>
+                                <text class="order-value-text">价格：{{item.price_true}}</text>
+                            </view>
+                        </view>
+                    </view>
+            </block>        
+            <view class="total-Price clearfix">
+                <view>
+                    <text>总价：￥{{itemName.price}}</text>
+                    <text class="total-price">{{item.totalPrice}}</text>
+                </view>
+            </view> 
+            <view class="order-tap clearfix">
+                <view catchtap = "goConfirm" data-id = "{{idx}}">
+                    <text>确认收货</text>
+                </view>
+                <view catchtap = "goCheck" class = "check" data-id = "{{idx}}">
+                    <text>查看物流</text>
+                </view>
+            </view> 
+    </view>
+
+</block>
+<view class="no-more" wx:if = "{{flagCart}}">没有更多啦</view>
+<loading hidden="{{flagCart}}" >
+   加载中...
+</loading>
+<loading hidden = "{{dealFlag}}">
+    处理中...
+</loading>

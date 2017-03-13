@@ -1,0 +1,33 @@
+/* pages/register/index.wxss */
+.top{
+    font-size:17px;
+    font-weight:bold;
+    text-align:center;
+    padding:10px 0;
+}
+.section input{
+    width:95%;
+    margin-left:5%;
+    height:40px;
+    line-height:40px;
+    border-bottom:1px solid #ccc;
+    font-size:15px;
+}
+.submit,.reset{
+    width:90%;
+    background-color:orange;
+    margin:10px 5%;
+    color:white;
+    font-size:15px;
+}
+.getCode{
+    width:30%;
+    height:30px;
+    line-height:30px;
+    margin:10px 5% 10px 65%;
+    font-size:13px;
+    background-color:orange;
+}
+.reset{
+    background-color:green;
+}

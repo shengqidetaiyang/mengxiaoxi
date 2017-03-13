@@ -1,0 +1,32 @@
+<block wx:for = "{{list}}" wx:for-index = "idx">
+<view class = "comment">
+   <image class = "person" src="{{item.avatarUrl}}"></image> 
+   <view class = "wrap">
+        <view class="fir">
+            <view class = "left">{{item.nickName}}</view>
+            <view class = "right">
+            </view>    
+        </view>
+        <view class="seo">{{item.comment}} </view>
+        <view class = "third">{{timeList[idx]}}</view>
+   </view>
+</view>
+</block>
+<view class = "bottom"></view>
+<view class = "meng" wx:if="{{dis}}" catchtap = "cancel">
+    <view class = "window" catchtap = "kong">
+        <view class = "fir">评论</view>
+        <form bindsubmit="bindFormSubmit">
+        <textarea name="textarea"/>
+        <view class = "confirm">
+            <button class = "left" catchtap = "cancel">取消</button>
+            <view class = "fenge"></view>
+            <button class = "right"  form-type="submit">确认</button>
+        </view>       
+        </form>
+
+    </view>
+</view>
+<view class = "say">
+    <button catchtap = "goSay">我有话说</button>
+</view>

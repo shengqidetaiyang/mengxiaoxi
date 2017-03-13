@@ -1,0 +1,7 @@
+<view wx:for="{{list}}" wx:for-index="idx">
+  <view class = "listBox">
+      <image src="{{item.produce_img}}" class="goodsBigImg" bindtap="goodsDetailTap" data-id = "{{idx}}"></image>
+  </view>
+  <text class="goodsName">{{item.name}}</text>
+  <text class="goodsPrice">￥{{item.price_true}}</text>
+</view>

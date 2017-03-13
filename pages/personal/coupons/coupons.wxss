@@ -1,0 +1,154 @@
+/* pages/personal/coupons/coupons.wxss */
+.clearfix{zoom:1;}
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+page{
+    background-color: #efefef;
+}
+.top-tap{
+    border-bottom: 1rpx solid #e5e5e5;
+    background-color: #fff;
+}
+.use-tap,.overdue-tap,.use-tap-color,.overdue-tap-color{
+    padding: 20rpx 0;
+    float: left;
+    width: 50%;
+    border-bottom: 1rpx solid transparent;
+    font-size: 30rpx;
+    color: #333;
+    text-align: center;
+}
+.use-tap-color,.overdue-tap-color{
+    color: orange;
+    border-bottom-color: orange;
+}
+.my-coupons{
+    background-color: #fff;
+    border-bottom: 1rpx solid #e5e5e5;
+    font-size: 30rpx;
+    color: #333;
+}
+.add-coupons{
+    float: left;
+    padding: 20rpx 0;
+}
+.add-coupons image,.use-information image{
+    margin-left: 5rpx;
+    margin-right: 5rpx;
+    width: 35rpx;
+    height: 35rpx;
+    vertical-align: middle;
+}
+.use-information{
+    float: right;
+    padding: 20rpx 0;
+}  
+.coupons{
+    position: relative;
+    margin:0 auto;
+    margin-top: 8rpx;
+    width: 98%;
+    height: 250rpx;
+} 
+.coupons image{
+    width: 100%;
+    height: 100%;
+}
+.couponsValue{
+    position: absolute;
+    top: 40rpx;
+    left: 0;
+    width: 32%;
+    font-size: 50rpx;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+}
+.couponsValue .num{
+    float: right;
+}
+.qualification{
+    position: absolute;
+    bottom: 40rpx;
+    left: 0;
+    width: 35%;
+    font-size: 30rpx;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+.coupons-type{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 190rpx;
+    border-bottom: 1rpx dashed #e5e5e5;
+    font-size: 30rpx;
+    text-align: center;
+    color: #333;
+}
+.coupons-type text{
+    display: block;
+    height: 100%;
+    line-height: 190rpx;
+}
+.period-validity{
+    position: absolute;
+    bottom: 10rpx;
+    right: 10rpx;
+    font-size: 25rpx;
+    color: #999;
+}
+.add-coupons-mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+.add-coupons-popup{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding-top: 30rpx;
+    width: 80%;
+    height: 210rpx;
+    background-color: #f6f6f6;
+    border-radius: 10rpx;
+    font-size: 30rpx;
+    text-align: center;
+}
+.add-coupons-popup input{
+    width:100%;
+}
+.cancel-determine{
+    width: 100%;
+    border-top: 1rpx solid #e5e5e5;
+}
+.cancel-determine view{
+    float: left;
+    width: 50%;
+    height: 63rpx;
+    line-height: 63rpx;
+}
+.determine{
+    box-sizing: border-box;
+    border-left: 1rpx solid #e5e5e5;
+    color: #369808;
+}
+.inputBoxWrap{
+    width:100%;
+    margin-top:10rpx;
+    padding-top:10rpx;
+}
+.inputBox{
+    border: 1px solid #333;
+    border-radius: 10rpx;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom:20rpx;
+}

@@ -1,0 +1,14 @@
+<view wx:for="{{list}}" wx:for-index="idx">
+  <view class = "listBox">
+      <image src="{{item.produce_img}}" class="goodsBigImg" bindtap="goodsDetailTap" data-id = "{{idx}}"></image>
+      <image src="../../../resources/heart.png" class = "heartIcon" wx:if ="{{item.is_wish == 1?false:true}}" catchtap = "getHeart" data-id = "{{idx}}"></image>
+      <image src="../../../resources/heartGet.png" class = "heartIcon"wx:if ="{{item.is_wish == 1?true:false}}" catchtap = "getHeart" data-id = "{{idx}}"></image>
+      <image src="../../../resources/cart.png" class = "cart" catchtap = "goCart" data-id = "{{idx}}"></image>  
+  </view>
+  <text class="goodsName">{{item.name}}</text>
+  <text class="goodsPrice">￥{{item.price_true}}</text>
+</view>
+<loading hidden="{{flagCart}}" bindchange="loadingChange">
+   加入购物车...
+</loading>
+

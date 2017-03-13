@@ -1,0 +1,93 @@
+/* pages/personal/address/address.wxss */
+.clearfix{zoom:1;}
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+page{
+    background-color: #efefef;
+}
+.add-address{
+    padding: 20rpx 0;
+    background-color: #d0d0d0;
+}
+.add-address view{
+    margin: 0 auto;
+    padding: 15rpx 0;
+    background-color: orange;
+    border-radius: 50rpx;
+    width: 700rpx;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.address{
+    position:relative;
+    min-height:160rpx;
+    border-bottom:20rpx solid #d0d0d0;
+    background-color:#fff;
+
+}
+.address-border{
+    height: 170rpx;
+}
+.address-border image{
+    width: 100%;
+    height: 100%;
+}
+.address-box{
+    position:absolute;
+    top:30rpx;
+    left:10rpx;
+    width:740rpx;
+    height:132rpx;
+    font-size:14px;
+}
+.address-left-box{
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+.address-right-box{
+    float: right;
+    margin-right: 10rpx;
+    width: 100px;
+}
+.default-text{
+    display: inline-block;
+    padding: 5rpx;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    color: #fff;
+}
+.user-name-text{
+    width: 100%;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.user-address{
+    position:absolute;
+    bottom:9rpx;
+    left:0;
+    font-size:13px;
+    color:#333;
+    height:73rpx;
+}
+.user-number{
+    font-size: 14px;
+    font-weight: 600;
+    height: 70rpx;
+}
+.default-delete-tap{
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+    margin-right: 10rpx;
+}
+.default-tap{
+    margin-right: 20rpx;
+    text-decoration: underline;
+}
+.delete-address-tap{
+    text-decoration: underline;
+}

@@ -1,0 +1,58 @@
+<view class = "outer">
+    <view class="address">
+        <view class="address-border">
+            <image src="{{borderSrc}}"></image>
+        </view>
+        <view class="user-info">收件人信息</view>
+        <view class="address-box clearfix" catchtap='goAdress'>
+            <view class="address-left-box">
+                <view class="user-name">
+                    <text class="user-name-text">{{addressData.name}}</text>
+                </view>
+                <scroll-view scroll-y class="user-address">{{addressData.province + addressData.city + addressData.county + addressData.detail}}</scroll-view>
+            </view>
+            <view class="address-arrow">
+                <image src="../../../resources/right_arrow.png"></image>
+            </view>
+            <view class="address-right-box">
+                <view class="user-number">{{addressData.phone}}</view>
+            </view>
+        </view>
+    </view>
+    <view class = "goodLists">
+            <view class = "goodList">
+                <image src="{{payData.src}}"></image>
+                <view>
+                    <text>{{payData.name}}</text>
+                    <text>￥{{payData.price}}</text>
+                </view>
+            </view>
+    </view>
+    <!--<view class = "favourable">
+        <view>优惠</view>
+        <view class = "ticket" catchtap='goTicket'>
+            <text>满减优惠券</text>
+            <image src="../../../resources/right.png"></image>
+            <text>添加优惠券</text>
+        </view>
+        <view>
+            <text>可使用妙钻抵</text>
+            <switch type="switch" />
+        </view>
+    </view>-->
+    <!--<view class = "message">
+        <view>留言备注</view>
+        <textarea  />
+    </view>-->
+</view>
+<view class = "button-box">
+    <button catchtap = "goPay">微信安全支付(￥{{payData.price*payData.count}})</button>
+</view>
+<loading hidden="{{loadFlag}}" bindchange="loadingChange">
+   请等待...
+</loading>
+<loading hidden="{{dataFlag}}" bindchange="loadingChange">
+   加载中...
+</loading>
+    
+

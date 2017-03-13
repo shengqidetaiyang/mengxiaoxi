@@ -1,0 +1,25 @@
+/* pages/personal/delivery/process/process.wxss */
+page{
+    background-color:#f2efef;
+}
+.top{
+    text-align: center;
+    background-color:#ea5505;
+    height:40px;
+    line-height:40px;
+    color:white;
+    font-size:17px;
+}
+.wrap{
+    background-color:white;
+    margin-bottom:15px;
+}
+.wrap view{
+    padding-left: 14rpx;
+    font-size:14px;
+    line-height:20px;
+}
+.tip{
+    padding:10px 0;
+    text-align:center;
+}

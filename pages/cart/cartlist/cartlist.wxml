@@ -1,0 +1,38 @@
+<view class = "wrap" wx:if = "{{pageShow}}">
+    <block wx:for='{{cart}}' wx:for-index="idx">
+        <view class = "goodsTips">
+            <view class = "chooseWrap" data-id = "{{idx}}"catchtap = 'select' >
+                <view class = "chooseInner" wx:if='{{item.flag}}'></view>
+            </view>
+            <view class = "goodsList">
+                <image src="{{item.produce_img}}"></image>
+                <view class = "words">
+                    <view>{{item.name}}</view>
+                    <view class = "wordsChildSec">￥{{item.price_true}}</view>
+                    <view class = "wordsChildThird" >
+                        <image src="../../../resources/minus.png" catchtap = "minus" data-id = '{{idx}}'></image>
+                        <text>{{item.produce_num}}</text>
+                        <image src="../../../resources/plus.png" catchtap = "plus" data-id = '{{idx}}'></image>
+                    </view>
+                </view>
+            </view>
+            <image src="../../../resources/del.png" class = "del" data-id = "{{idx}}" catchtap = "del"></image>
+        </view>
+    </block>
+    <view class = "bottom">
+        <view class = "chooseWrap" catchtap = 'selectAll'>
+            <view class = "chooseInner" wx:if='{{flag}}'></view>
+        </view>
+        <view class = "words">
+            <text>全选</text>
+            <text class = "total">总计:￥{{priceTotal}}</text>
+            <button catchtap = "goPayment">去结算:{{countTotal}}</button>
+        </view>
+    </view>
+    <loading hidden="{{goCart}}" bindchange="loadingChange">
+       加载中...
+    </loading>
+</view>
+<button wx:if = "{{buttonShow}}" type = "primary" catchtap = "goRegister">点击去往注册页</button>
+
+
