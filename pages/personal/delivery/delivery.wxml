@@ -6,6 +6,7 @@
     <navigator open-type="redirect" url="/pages/personal/finish/finish">已完成</navigator>
     <navigator open-type="redirect" url="/pages/personal/order/order">已取消</navigator>
 </view>
+<view class = "touchBox" bindtouchstart = "slide" bindtouchmove = "slideend" bindtouchend = "cal">
 <block wx:for="{{sqlOrder}}" wx:for-item="itemName" wx:for-index="idx">
     <view class="order" >
         <view class="order-num-time clearfix">
@@ -76,6 +77,7 @@
     </view>
 
 </block>
+</view>
 <view class="no-more" wx:if = "{{flagCart}}">没有更多啦</view>
 <loading hidden="{{flagCart}}" >
    加载中...

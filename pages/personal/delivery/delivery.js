@@ -4,6 +4,9 @@ var myOrderUrl = require('../../../config').wxwxOrderListUrl;
 var deliveryUrl = require('../../../config').wxLogisticsUrl;
 var confirm = require('../../../config').wxPorduceSureGetUrl;
 var order_id;
+var start;
+var end;
+var length;
 Page({
   data:{
     flagCart:false,
@@ -150,6 +153,27 @@ Page({
     return {
       title: '萌小熹',
       path: '/pages/index/index'
+    }
+  },
+  slide:function(event){
+    var e = event || window.event;
+    start = e.touches[0].clientX;
+  },
+  slideend:function(event){
+    var e = event || window.event;
+    end = e.touches[0].clientX;
+  },
+  cal:function(){
+    length = end - start;
+    if(length < -60){
+      wx.redirectTo({
+        url:'/pages/personal/finish/finish'
+      });
+    }
+    if(length > 60){
+      wx.redirectTo({
+        url:'/pages/personal/payment/payment'
+      });
     }
   }
 })

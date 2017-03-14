@@ -1,9 +1,9 @@
 {
   "pages":[ 
     "pages/index/index",
+    "pages/personal/allorder/allorder",
     "pages/personal/more/about/about",
     "pages/vision/vision",
-    "pages/personal/allorder/allorder",
     "pages/personal/payment/payment",
     "pages/personal/delivery/process/process",
     "pages/register/index",

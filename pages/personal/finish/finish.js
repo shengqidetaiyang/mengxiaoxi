@@ -1,6 +1,9 @@
 // pages/personal/payment/payment.js
 var util = require('../../../utils/util.js');
 var myOrderUrl = require('../../../config').wxwxOrderListUrl;
+var start;
+var end;
+var length;
 Page({
   data:{
     flagCart:false
@@ -72,6 +75,27 @@ Page({
     return {
       title: '萌小熹',
       path: '/pages/index/index'
+    }
+  },
+  slide:function(event){
+    var e = event || window.event;
+    start = e.touches[0].clientX;
+  },
+  slideend:function(event){
+    var e = event || window.event;
+    end = e.touches[0].clientX;
+  },
+  cal:function(){
+    length = end - start;
+    if(length < -60){
+      wx.redirectTo({
+        url:'/pages/personal/order/order'
+      });
+    }
+    if(length > 60){
+      wx.redirectTo({
+        url:'/pages/personal/delivery/delivery'
+      });
     }
   }
 })
