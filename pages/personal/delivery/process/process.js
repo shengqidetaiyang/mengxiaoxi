@@ -26,5 +26,11 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '萌小熹',
+      path: '/pages/index/index'
+    }
   }
 })

@@ -309,6 +309,12 @@ bannerGo:function(event){
       url: '/pages/vision/arctical/arctical?id='+ id
     })
   };
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '萌小熹',
+      path: '/pages/index/index'
+    }
   }
 
 })

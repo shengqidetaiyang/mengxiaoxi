@@ -357,5 +357,11 @@ onReady:function(){
      }
    });   
 
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '萌小熹',
+      path: '/pages/index/index'
+    }
   }
 })

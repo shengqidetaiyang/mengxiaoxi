@@ -3,14 +3,11 @@
     "pages/index/index",
     "pages/personal/more/about/about",
     "pages/vision/vision",
-
     "pages/personal/allorder/allorder",
-
     "pages/personal/payment/payment",
     "pages/personal/delivery/process/process",
     "pages/register/index",
     "pages/personal/delivery/delivery",
-
     "pages/personal/finish/finish",
     "pages/personal/address/addressb/addressb",
     "pages/personal/address/addressc/addressc",
@@ -23,12 +20,10 @@
     "pages/cart/paymentCart/paymentCart",
     "pages/classfiy/classfiy",
     "pages/logs/logs",
-
     "pages/personal/personal/personal",
     "pages/classfiy/goodsList/goodsList",
     "pages/classfiy/goodsListB/goodsListB",
     "pages/personal/more/more",
-
     "pages/personal/more/contact/contact",
     "pages/personal/more/other/other",
     "pages/personal/level/level",

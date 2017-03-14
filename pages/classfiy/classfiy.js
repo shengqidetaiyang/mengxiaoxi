@@ -63,5 +63,11 @@ Page({
     wx.navigateTo({
       url:'goodsList/goodsList?type=1&id=produceUrl'
     })
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '萌小熹',
+      path: '/pages/index/index'
+    }
   }
 })

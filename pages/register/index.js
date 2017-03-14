@@ -70,5 +70,11 @@ else{
   },
   formReset: function() {
     console.log('form发生了reset事件')
+  },
+  onShareAppMessage: function () {
+    return {
+      title: '萌小熹',
+      path: '/pages/index/index'
+    }
   }
 })
