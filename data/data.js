@@ -127,21 +127,21 @@ var goodsClaData = [
       category_des:"这是一项分类",
       clickAction:'newProduceUrl'
     }, {
-      category_img:'../../resources/clothWash.png',
+      category_img:'../../resources/skinWash.png',
       category_name: '洗衣液',
       id: '1',
       reid:1,
       category_des:"这是一项分类",
       clickAction:'hotProduceUrl'
     }, {
-      category_img:'../../resources/skinWash.png',
+      category_img:'../../resources/clothWash.png',
       category_name: '润肤乳',
       id: '2',
       reid:1,
       category_des:"这是一项分类",
       clickAction:'recommendProduceUrl'
     }, {
-      category_img:'../../resources/hairWash.png',
+      category_img:'../../resources/third.png',
       category_name: '洗发香波',
       id: '3',
       reid:1,

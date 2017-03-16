@@ -6,10 +6,16 @@
   </block>
 </swiper>
 <view class="recommend_scroll_x_box">
-  <view class="recommend_hot_box" wx:for="{{appData.goodsClaData}}">
-    <navigator url="../classfiy/goodsList/goodsList?id={{item.clickAction}}&type=1">
-      <image src="{{item.category_img}}" class="recommend_hot_image"></image>
+  <view class="recommend_hot_box" wx:for="{{top}}" wx:for-index = "idx">
+    <navigator url="../classfiy/goodsList/goodsList?id={{item.id}}&type=2" >
+      <image src="{{appData.goodsClaData[idx].category_img}}" class="recommend_hot_image"></image>
       <text class="recommend_hot_text">{{item.category_name}}</text>
+    </navigator>
+  </view>
+  <view class="recommend_hot_box">
+    <navigator url="../classfiy/goodsList/goodsList?id=produceUrl&type=1">
+      <image src="{{appData.goodsClaData[3].category_img}}" class="recommend_hot_image"></image>
+      <text class="recommend_hot_text">所有商品</text>
     </navigator>
   </view>
 </view>

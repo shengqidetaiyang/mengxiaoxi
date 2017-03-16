@@ -53,7 +53,8 @@ var loadMore = function(that,a){
              list.push(res.data[i]);
            }
            that.setData({
-             list : list
+             list : list,
+             dataFlag:true
            });
            wx.hideNavigationBarLoading();
            a = true;
@@ -78,7 +79,8 @@ var loadMore = function(that,a){
                list.push(res.data[i]);
              }
              that.setData({
-               list : list
+               list : list,
+               dataFlag:true
              });
              wx.hideNavigationBarLoading();
              a = true;
@@ -126,7 +128,8 @@ var loadMoreB = function(that,a,f){
              list.push(res.data[i]);
            }
            that.setData({
-             list : list
+             list : list,
+             dataFlag:true
            });
            wx.hideNavigationBarLoading();
            f = true;
@@ -152,7 +155,8 @@ var loadMoreB = function(that,a,f){
                list.push(res.data[i]);
              }
              that.setData({
-               list : list
+               list : list,
+               dataFlag:true
              });
              wx.hideNavigationBarLoading();
              f = true;
@@ -170,7 +174,8 @@ var loadMoreB = function(that,a,f){
 Page({
   data:{
     list:[],
-    flagCart:true
+    flagCart:true,
+    dataFlag:false
   },
   goodsDetailTap:function(event){
     var ids = event.currentTarget.dataset.id;
@@ -281,6 +286,9 @@ onLoad:function(options){
   }
 },
 onReachBottom:function(){
+  this.setData({
+    dataFlag:false
+  });
   var that = this;
   var type = this.data.type;
   var id = this.data.actionList;

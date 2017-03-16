@@ -11,4 +11,6 @@
 <loading hidden="{{flagCart}}" bindchange="loadingChange">
    加入购物车...
 </loading>
-
+<loading hidden="{{dataFlag}}" bindchange="loadingChange">
+   加载中...
+</loading>

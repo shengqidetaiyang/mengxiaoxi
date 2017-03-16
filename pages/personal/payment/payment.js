@@ -7,6 +7,9 @@ var md5 = require('../../../utils/md5.js');
 var start;
 var end;
 var length;
+var top;
+var bottom;
+var height;
 Page({
   data:{
     flagCart:false,
@@ -255,19 +258,22 @@ Page({
   slide:function(event){
     var e = event || window.event;
     start = e.touches[0].clientX;
+    top = e.touches[0].clientY;
   },
   slideend:function(event){
     var e = event || window.event;
     end = e.touches[0].clientX;
+    bottom = e.touches[0].clientY;
   },
   cal:function(){
     length = end - start;
-    if(length < -60){
+    height = bottom - top;
+    if(length < -60 && height < 30 && height > -30){
       wx.redirectTo({
         url:'/pages/personal/delivery/delivery'
       });
     }
-    if(length > 60){
+    if(length > 60 && height < 30 && height > -30){
       wx.redirectTo({
         url:'/pages/personal/allorder/allorder'
       });

@@ -109,7 +109,8 @@ Page({
     actionList:'recommendProduce',
     list:[],
     goCart:true,
-    dataFlag:true
+    dataFlag:true,
+    top:[]
   },
   //事件处理函数
   onLoad: function () {
@@ -133,6 +134,25 @@ Page({
         });
         }         
     })
+       var urlInner = require('../../config').produceCategoryUrl;
+       wx.request({         
+           url: urlInner,
+           method: 'GET',
+           data:{
+               page : 1,
+               page_size : 3,
+           },
+           success:function(res){
+               var top = that.data.top ;
+               for(var i = 0; i < res.data.length; i++){
+                   top.push(res.data[i]);
+               }
+               that.setData({
+                   top : top
+               });
+               wx.hideNavigationBarLoading();
+           }
+       });
   },
   onShow:function(){
   },
@@ -296,7 +316,7 @@ getHeart:function(event){
 bannerGo:function(event){
   var idx = event.currentTarget.dataset.id;
   var bannerData = this.data.bannerData;
-  var id = bannerData[idx].id;
+  var id = bannerData[idx].url;
   var type = bannerData[idx].type;
   wx.setStorageSync("currentGoodsId",id);
   if(type == 1){
